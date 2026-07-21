@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MASTERTECH | Ingeniería & Soluciones Metalmecánicas</title>
-    <meta name="description" content="MASTERTECH - Especialistas en ingeniería, diseño, fabricación e instalación de estructuras metalmecánicas y soluciones industriales.">
+    <title>MASTER - TECH C.A. | Ingeniería & Soluciones Metalmecánicas</title>
+    <meta name="description" content="MASTER - TECH C.A. - Especialistas en ingeniería, diseño, fabricación e instalación de estructuras metalmecánicas y soluciones industriales.">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -15,7 +15,8 @@
                         steelDark: '#0f172a',
                         steelGray: '#334155',
                         industrialBlue: '#0284c7',
-                        industrialAccent: '#f97316',
+                        industrialAccent: '#528570', // Verde tomado del logo
+                        industrialAccentHover: '#3f6757',
                         lightBg: '#f8fafc',
                     },
                     fontFamily: {
@@ -35,25 +36,20 @@
 
     <!-- Header / Navegación -->
     <header class="fixed top-0 left-0 w-full z-50 bg-steelDark/95 backdrop-blur-md border-b border-slate-800 text-white" id="navbar">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <!-- Logo MASTERTECH -->
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+            <!-- Logo MASTER - TECH C.A. -->
             <a href="#inicio" class="flex items-center gap-3 group">
-                <span class="text-2xl text-industrialAccent group-hover:scale-110 transition-transform">
-                    <i class="fa-solid fa-gear"></i>
-                </span>
-                <div class="leading-none">
-                    <h1 class="font-black text-2xl tracking-wider text-white">MASTER<span class="text-industrialBlue">TECH</span></h1>
-                    <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold block">Ingeniería Metalmecánica</span>
-                </div>
+                <img src="logo1.jpg" alt="MASTER - TECH C.A. Logo" class="h-10 w-auto object-contain bg-white rounded p-1">
             </a>
 
             <!-- Menú Escritorio -->
             <nav class="hidden md:flex items-center gap-8 font-semibold text-sm">
-                <a href="#inicio" class="hover:text-industrialBlue transition-colors">Inicio</a>
-                <a href="#nosotros" class="hover:text-industrialBlue transition-colors">Nosotros</a>
-                <a href="#servicios" class="hover:text-industrialBlue transition-colors">Servicios</a>
-                <a href="#proyectos" class="hover:text-industrialBlue transition-colors">Proyectos</a>
-                <a href="#contacto" class="bg-industrialAccent hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg shadow-md transition-all">Cotizar Proyecto</a>
+                <a href="#inicio" class="hover:text-industrialAccent transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-industrialAccent transition-colors">Nosotros</a>
+                <a href="#servicios" class="hover:text-industrialAccent transition-colors">Servicios</a>
+                <a href="#proyectos" class="hover:text-industrialAccent transition-colors">Proyectos</a>
+                <a href="#clientes" class="hover:text-industrialAccent transition-colors">Clientes</a>
+                <a href="#contacto" class="bg-industrialAccent hover:bg-industrialAccentHover text-white px-5 py-2.5 rounded-lg shadow-md transition-all">Cotizar Proyecto</a>
             </nav>
 
             <!-- Menú Móvil Botón -->
@@ -65,10 +61,11 @@
         <!-- Menú Móvil Desplegable -->
         <div class="hidden md:hidden bg-steelDark border-t border-slate-800" id="mobile-menu">
             <div class="px-6 py-6 flex flex-col gap-4 text-center font-medium">
-                <a href="#inicio" class="py-2 hover:text-industrialBlue">Inicio</a>
-                <a href="#nosotros" class="py-2 hover:text-industrialBlue">Nosotros</a>
-                <a href="#servicios" class="py-2 hover:text-industrialBlue">Servicios</a>
-                <a href="#proyectos" class="py-2 hover:text-industrialBlue">Proyectos</a>
+                <a href="#inicio" class="py-2 hover:text-industrialAccent">Inicio</a>
+                <a href="#nosotros" class="py-2 hover:text-industrialAccent">Nosotros</a>
+                <a href="#servicios" class="py-2 hover:text-industrialAccent">Servicios</a>
+                <a href="#proyectos" class="py-2 hover:text-industrialAccent">Proyectos</a>
+                <a href="#clientes" class="py-2 hover:text-industrialAccent">Clientes</a>
                 <a href="#contacto" class="bg-industrialAccent text-white px-6 py-3 rounded-lg mt-2">Cotizar Proyecto</a>
             </div>
         </div>
@@ -77,17 +74,17 @@
     <!-- Sección Hero (Inicio) -->
     <section id="inicio" class="relative pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 min-h-[85vh]">
         <div class="lg:w-1/2 text-left">
-            <span class="inline-block bg-industrialBlue/10 text-industrialBlue border border-industrialBlue/20 text-xs uppercase tracking-widest px-3.5 py-1.5 rounded-full font-bold mb-4">
+            <span class="inline-block bg-industrialAccent/10 text-industrialAccent border border-industrialAccent/20 text-xs uppercase tracking-widest px-3.5 py-1.5 rounded-full font-bold mb-4">
                 <i class="fa-solid fa-screwdriver-wrench mr-1"></i> Soluciones Industriales Integrales
             </span>
             <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-steelDark leading-tight mb-6">
-                Ingeniería sólida para la <span class="text-industrialBlue">industria moderna</span>
+                Ingeniería sólida para la <span class="text-industrialAccent">industria moderna</span>
             </h2>
             <p class="text-slate-600 text-lg leading-relaxed mb-8">
-                En <strong>MASTERTECH</strong> diseñamos, fabricamos e instalamos soluciones metalmecánicas de alta precisión. Convertimos proyectos complejos en estructuras seguras, eficientes y duraderas.
+                En <strong>MASTER - TECH C.A.</strong> diseñamos, fabricamos e instalamos soluciones metalmecánicas de alta precisión. Convertimos proyectos complejos en estructuras seguras, eficientes y duraderas.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#contacto" class="bg-industrialAccent hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-2">
+                <a href="#contacto" class="bg-industrialAccent hover:bg-industrialAccentHover text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-2">
                     <i class="fa-solid fa-file-contract"></i> Solicitar Presupuesto
                 </a>
                 <a href="#proyectos" class="bg-white border border-slate-300 text-steelDark font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-all text-center flex items-center justify-center gap-2">
@@ -99,7 +96,7 @@
         <!-- FOTO 1: Portada Principal -->
         <div class="lg:w-1/2 w-full">
             <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
-                <img src="foto1.jpg" alt="MASTERTECH - Taller y Fabricación Metalmecánica" class="w-full h-full object-cover">
+                <img src="foto1.jpg" alt="MASTER - TECH C.A. - Taller y Fabricación Metalmecánica" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-steelDark/60 via-transparent to-transparent"></div>
             </div>
         </div>
@@ -130,18 +127,18 @@
     <!-- Sección Nosotros -->
     <section id="nosotros" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <!-- FOTO 2: Empresa / Equipo -->
+            <!-- FOTO 2 -->
             <div class="lg:col-span-6">
                 <div class="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 aspect-square max-h-[500px] mx-auto">
-                    <img src="foto2.jpg" alt="Equipo de Ingeniería MASTERTECH" class="w-full h-full object-cover">
+                    <img src="foto2.jpg" alt="Equipo de Ingeniería MASTER - TECH C.A." class="w-full h-full object-cover">
                 </div>
             </div>
 
             <div class="lg:col-span-6">
-                <span class="text-industrialBlue font-bold uppercase tracking-wider text-xs block mb-2">Conoce MASTERTECH</span>
+                <span class="text-industrialAccent font-bold uppercase tracking-wider text-xs block mb-2">Conoce MASTER - TECH C.A.</span>
                 <h3 class="text-3xl md:text-4xl font-black text-steelDark mb-6">Excelencia e innovación en ingeniería metalmecánica</h3>
                 <p class="text-slate-600 leading-relaxed mb-6">
-                    <strong>MASTERTECH</strong> nace con el compromiso de ofrecer servicios especializados de ingeniería, cálculo estructural, fabricación de elementos metálicos y montajes industriales.
+                    <strong>MASTER - TECH C.A.</strong> nace con el compromiso de ofrecer servicios especializados de ingeniería, cálculo estructural, fabricación de elementos metálicos y montajes industriales.
                 </p>
                 <p class="text-slate-600 leading-relaxed mb-8">
                     Contamos con personal altamente calificado y los procesos técnicos necesarios para cumplir con los estándares más exigentes de la industria nacional, garantizando entregas puntuales y máxima durabilidad en cada trabajo.
@@ -172,7 +169,7 @@
     <section id="servicios" class="py-24 bg-slate-100 border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-industrialBlue font-bold uppercase tracking-wider text-xs block mb-2">Capacidad Técnica</span>
+                <span class="text-industrialAccent font-bold uppercase tracking-wider text-xs block mb-2">Capacidad Técnica</span>
                 <h3 class="text-3xl md:text-4xl font-black text-steelDark mb-4">Nuestros Servicios</h3>
                 <p class="text-slate-600">Soluciones a medida para los sectores industrial, comercial y de infraestructura.</p>
             </div>
@@ -180,7 +177,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Servicio 1 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                    <span class="w-14 h-14 rounded-xl bg-industrialBlue/10 text-industrialBlue flex items-center justify-center text-2xl font-bold mb-6">
+                    <span class="w-14 h-14 rounded-xl bg-industrialAccent/10 text-industrialAccent flex items-center justify-center text-2xl font-bold mb-6">
                         <i class="fa-solid fa-building-user"></i>
                     </span>
                     <h4 class="text-xl font-bold text-steelDark mb-3">Estructuras Metálicas</h4>
@@ -191,7 +188,7 @@
 
                 <!-- Servicio 2 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                    <span class="w-14 h-14 rounded-xl bg-industrialBlue/10 text-industrialBlue flex items-center justify-center text-2xl font-bold mb-6">
+                    <span class="w-14 h-14 rounded-xl bg-industrialAccent/10 text-industrialAccent flex items-center justify-center text-2xl font-bold mb-6">
                         <i class="fa-solid fa-industry"></i>
                     </span>
                     <h4 class="text-xl font-bold text-steelDark mb-3">Mecanizado & Piezas</h4>
@@ -202,7 +199,7 @@
 
                 <!-- Servicio 3 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                    <span class="w-14 h-14 rounded-xl bg-industrialBlue/10 text-industrialBlue flex items-center justify-center text-2xl font-bold mb-6">
+                    <span class="w-14 h-14 rounded-xl bg-industrialAccent/10 text-industrialAccent flex items-center justify-center text-2xl font-bold mb-6">
                         <i class="fa-solid fa-compass-drafting"></i>
                     </span>
                     <h4 class="text-xl font-bold text-steelDark mb-3">Proyectos de Ingeniería</h4>
@@ -214,19 +211,19 @@
         </div>
     </section>
 
-    <!-- Galería de Proyectos (Fotos 3 a 6) -->
+    <!-- Galería de Proyectos -->
     <section id="proyectos" class="py-24 max-w-7xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="text-industrialBlue font-bold uppercase tracking-wider text-xs block mb-2">Muestra de Trabajos</span>
+            <span class="text-industrialAccent font-bold uppercase tracking-wider text-xs block mb-2">Muestra de Trabajos</span>
             <h3 class="text-3xl md:text-4xl font-black text-steelDark mb-4">Galería de Proyectos</h3>
-            <p class="text-slate-600">Imágenes reales de ejecuciones metalmecánicas desarrolladas por MASTERTECH.</p>
+            <p class="text-slate-600">Imágenes reales de ejecuciones metalmecánicas desarrolladas por MASTER - TECH C.A.</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- FOTO 3 -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow border border-slate-200">
                 <div class="aspect-square relative overflow-hidden bg-slate-200">
-                    <img src="foto3.jpg" alt="Fabricación Estructural MASTERTECH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="foto3.jpg" alt="Fabricación Estructural" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
                     <h4 class="font-bold text-steelDark text-sm">Fabricación Estructural</h4>
@@ -237,7 +234,7 @@
             <!-- FOTO 4 -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow border border-slate-200">
                 <div class="aspect-square relative overflow-hidden bg-slate-200">
-                    <img src="foto4.jpg" alt="Mecanizado de Precisión MASTERTECH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="foto4.jpg" alt="Mecanizado de Precisión" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
                     <h4 class="font-bold text-steelDark text-sm">Mecanizado de Alta Precisión</h4>
@@ -248,7 +245,7 @@
             <!-- FOTO 5 -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow border border-slate-200">
                 <div class="aspect-square relative overflow-hidden bg-slate-200">
-                    <img src="foto5.jpg" alt="Montaje Industrial MASTERTECH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="foto5.jpg" alt="Montaje Industrial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
                     <h4 class="font-bold text-steelDark text-sm">Montaje e Instalaciones</h4>
@@ -259,11 +256,50 @@
             <!-- FOTO 6 -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow border border-slate-200">
                 <div class="aspect-square relative overflow-hidden bg-slate-200">
-                    <img src="foto6.jpg" alt="Mantenimiento Metalmecánico MASTERTECH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="foto6.jpg" alt="Mantenimiento Metalmecánico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
                     <h4 class="font-bold text-steelDark text-sm">Mantenimiento Industrial</h4>
                     <p class="text-xs text-slate-500">Reparación y adecuaciones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Clientes (Logos Cuadrados) -->
+    <section id="clientes" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-industrialAccent font-bold uppercase tracking-wider text-xs block mb-2">Confianza Demostrada</span>
+                <h3 class="text-3xl md:text-4xl font-black text-steelDark mb-3">Nuestros Clientes</h3>
+                <p class="text-slate-600">Empresas que confían en nuestra precisión técnica e ingeniería.</p>
+            </div>
+
+            <!-- Cuadrícula de 8 logos cuadrados -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 items-center">
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm aspect-square flex items-center justify-center hover:shadow-md transition-shadow">
+                    <img src="cli1.jpg" alt="Cliente 1" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm aspect-square flex items-center justify-center hover:shadow-md transition-shadow">
+                    <img src="cli2.jpg" alt="Cliente 2" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm aspect-square flex items-center justify-center hover:shadow-md transition-shadow">
+                    <img src="cli3.jpg" alt="Cliente 3" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm aspect-square flex items-center justify-center hover:shadow-md transition-shadow">
+                    <img src="cli4.jpg" alt="Cliente 4" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm aspect-square flex items-center justify-center hover:shadow-md transition-shadow">
+                    <img src="cli5.jpg" alt="Cliente 5" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm aspect-square flex items-center justify-center hover:shadow-md transition-shadow">
+                    <img src="cli6.jpg" alt="Cliente 6" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm aspect-square flex items-center justify-center hover:shadow-md transition-shadow">
+                    <img src="cli7.jpg" alt="Cliente 7" class="w-full h-full object-contain">
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm aspect-square flex items-center justify-center hover:shadow-md transition-shadow">
+                    <img src="cli8.jpg" alt="Cliente 8" class="w-full h-full object-contain">
                 </div>
             </div>
         </div>
@@ -275,14 +311,14 @@
             
             <div class="lg:col-span-5">
                 <span class="text-industrialAccent font-bold uppercase tracking-wider text-xs block mb-2">Atención Inmediata</span>
-                <h3 class="text-3xl md:text-4xl font-black mb-6">Inicia tu proyecto con MASTERTECH</h3>
+                <h3 class="text-3xl md:text-4xl font-black mb-6">Inicia tu proyecto con MASTER - TECH C.A.</h3>
                 <p class="text-slate-300 leading-relaxed mb-8">
                     Déjanos tus datos o los requerimientos de tu empresa para ponernos en contacto a la brevedad con una propuesta técnica y económica.
                 </p>
 
                 <div class="space-y-6 text-sm">
                     <div class="flex items-center gap-4">
-                        <span class="w-10 h-10 rounded-lg bg-slate-800 text-industrialBlue flex items-center justify-center text-lg">
+                        <span class="w-10 h-10 rounded-lg bg-slate-800 text-industrialAccent flex items-center justify-center text-lg">
                             <i class="fa-solid fa-phone"></i>
                         </span>
                         <div>
@@ -292,7 +328,7 @@
                     </div>
 
                     <div class="flex items-center gap-4">
-                        <span class="w-10 h-10 rounded-lg bg-slate-800 text-industrialBlue flex items-center justify-center text-lg">
+                        <span class="w-10 h-10 rounded-lg bg-slate-800 text-industrialAccent flex items-center justify-center text-lg">
                             <i class="fa-solid fa-envelope"></i>
                         </span>
                         <div>
@@ -302,7 +338,7 @@
                     </div>
 
                     <div class="flex items-center gap-4">
-                        <span class="w-10 h-10 rounded-lg bg-slate-800 text-industrialBlue flex items-center justify-center text-lg">
+                        <span class="w-10 h-10 rounded-lg bg-slate-800 text-industrialAccent flex items-center justify-center text-lg">
                             <i class="fa-solid fa-location-dot"></i>
                         </span>
                         <div>
@@ -319,25 +355,25 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Nombre o Empresa</label>
-                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialBlue">
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialAccent">
                         </div>
                         <div>
                             <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Teléfono de Contacto</label>
-                            <input type="tel" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialBlue">
+                            <input type="tel" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialAccent">
                         </div>
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Correo Electrónico</label>
-                        <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialBlue">
+                        <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialAccent">
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Detalles del Proyecto / Requerimiento</label>
-                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialBlue" placeholder="Describe brevemente el trabajo metalmecánico requerida..."></textarea>
+                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialAccent" placeholder="Describe brevemente el trabajo metalmecánico requerido..."></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-industrialAccent hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition-all">
+                    <button type="submit" class="w-full bg-industrialAccent hover:bg-industrialAccentHover text-white font-bold py-4 rounded-xl shadow-lg transition-all">
                         Enviar Solicitud
                     </button>
                 </form>
@@ -348,7 +384,7 @@
     <!-- Footer -->
     <footer class="bg-slate-950 text-slate-500 py-8 px-6 border-t border-slate-800 text-xs">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <p><strong>MASTERTECH</strong> &copy; 2026. Todos los derechos reservados.</p>
+            <p><strong>MASTER - TECH C.A.</strong> &copy; 2026. Todos los derechos reservados.</p>
             <p>Ingeniería & Soluciones Metalmecánicas Integrales.</p>
         </div>
     </footer>
