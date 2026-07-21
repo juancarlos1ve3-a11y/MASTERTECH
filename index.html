@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTERTECH | Ingeniería & Soluciones Metalmecánicas</title>
+    <meta name="description" content="MASTERTECH - Especialistas en ingeniería, diseño, fabricación e instalación de estructuras metalmecánicas y soluciones industriales.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        steelDark: '#0f172a',
+                        steelGray: '#334155',
+                        industrialBlue: '#0284c7',
+                        industrialAccent: '#f97316',
+                        lightBg: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-lightBg font-sans text-slate-800 antialiased selection:bg-industrialBlue selection:text-white">
+
+    <!-- Header / Navegación -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-steelDark/95 backdrop-blur-md border-b border-slate-800 text-white" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo MASTERTECH -->
+            <a href="#inicio" class="flex items-center gap-3 group">
+                <span class="text-2xl text-industrialAccent group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+                <div class="leading-none">
+                    <h1 class="font-black text-2xl tracking-wider text-white">MASTER<span class="text-industrialBlue">TECH</span></h1>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold block">Ingeniería Metalmecánica</span>
+                </div>
+            </a>
+
+            <!-- Menú Escritorio -->
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm">
+                <a href="#inicio" class="hover:text-industrialBlue transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-industrialBlue transition-colors">Nosotros</a>
+                <a href="#servicios" class="hover:text-industrialBlue transition-colors">Servicios</a>
+                <a href="#proyectos" class="hover:text-industrialBlue transition-colors">Proyectos</a>
+                <a href="#contacto" class="bg-industrialAccent hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg shadow-md transition-all">Cotizar Proyecto</a>
+            </nav>
+
+            <!-- Menú Móvil Botón -->
+            <button class="md:hidden text-2xl text-white focus:outline-none" id="menu-btn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Menú Móvil Desplegable -->
+        <div class="hidden md:hidden bg-steelDark border-t border-slate-800" id="mobile-menu">
+            <div class="px-6 py-6 flex flex-col gap-4 text-center font-medium">
+                <a href="#inicio" class="py-2 hover:text-industrialBlue">Inicio</a>
+                <a href="#nosotros" class="py-2 hover:text-industrialBlue">Nosotros</a>
+                <a href="#servicios" class="py-2 hover:text-industrialBlue">Servicios</a>
+                <a href="#proyectos" class="py-2 hover:text-industrialBlue">Proyectos</a>
+                <a href="#contacto" class="bg-industrialAccent text-white px-6 py-3 rounded-lg mt-2">Cotizar Proyecto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero (Inicio) -->
+    <section id="inicio" class="relative pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 min-h-[85vh]">
+        <div class="lg:w-1/2 text-left">
+            <span class="inline-block bg-industrialBlue/10 text-industrialBlue border border-industrialBlue/20 text-xs uppercase tracking-widest px-3.5 py-1.5 rounded-full font-bold mb-4">
+                <i class="fa-solid fa-screwdriver-wrench mr-1"></i> Soluciones Industriales Integrales
+            </span>
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-steelDark leading-tight mb-6">
+                Ingeniería sólida para la <span class="text-industrialBlue">industria moderna</span>
+            </h2>
+            <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                En <strong>MASTERTECH</strong> diseñamos, fabricamos e instalamos soluciones metalmecánicas de alta precisión. Convertimos proyectos complejos en estructuras seguras, eficientes y duraderas.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#contacto" class="bg-industrialAccent hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-contract"></i> Solicitar Presupuesto
+                </a>
+                <a href="#proyectos" class="bg-white border border-slate-300 text-steelDark font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-all text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-helmet-safety"></i> Ver Proyectos
+                </a>
+            </div>
+        </div>
+
+        <!-- FOTO 1: Portada Principal -->
+        <div class="lg:w-1/2 w-full">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
+                <img src="foto1.jpg" alt="MASTERTECH - Taller y Fabricación Metalmecánica" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-steelDark/60 via-transparent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Métricas Rápidas -->
+    <section class="bg-steelDark text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <span class="block text-3xl md:text-4xl font-black text-industrialAccent mb-1">+10</span>
+                <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Años de Experiencia</span>
+            </div>
+            <div>
+                <span class="block text-3xl md:text-4xl font-black text-industrialBlue mb-1">100%</span>
+                <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Calidad Garantizada</span>
+            </div>
+            <div>
+                <span class="block text-3xl md:text-4xl font-black text-industrialAccent mb-1">+200</span>
+                <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Proyectos Ejecutados</span>
+            </div>
+            <div>
+                <span class="block text-3xl md:text-4xl font-black text-industrialBlue mb-1">24/7</span>
+                <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Soporte Técnico</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- FOTO 2: Empresa / Equipo -->
+            <div class="lg:col-span-6">
+                <div class="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 aspect-square max-h-[500px] mx-auto">
+                    <img src="foto2.jpg" alt="Equipo de Ingeniería MASTERTECH" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="lg:col-span-6">
+                <span class="text-industrialBlue font-bold uppercase tracking-wider text-xs block mb-2">Conoce MASTERTECH</span>
+                <h3 class="text-3xl md:text-4xl font-black text-steelDark mb-6">Excelencia e innovación en ingeniería metalmecánica</h3>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    <strong>MASTERTECH</strong> nace con el compromiso de ofrecer servicios especializados de ingeniería, cálculo estructural, fabricación de elementos metálicos y montajes industriales.
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-8">
+                    Contamos con personal altamente calificado y los procesos técnicos necesarios para cumplir con los estándares más exigentes de la industria nacional, garantizando entregas puntuales y máxima durabilidad en cada trabajo.
+                </p>
+
+                <!-- Puntos Clave -->
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <span class="text-industrialAccent text-lg mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                        <div>
+                            <h4 class="font-bold text-steelDark">Diseño y Cálculo Estructural</h4>
+                            <p class="text-slate-500 text-sm">Modelado 3D y optimización de materiales bajo normas de seguridad.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-industrialAccent text-lg mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                        <div>
+                            <h4 class="font-bold text-steelDark">Mano de Obra Especializada</h4>
+                            <p class="text-slate-500 text-sm">Soldadores homologados y técnicos de montaje experimentados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-24 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-industrialBlue font-bold uppercase tracking-wider text-xs block mb-2">Capacidad Técnica</span>
+                <h3 class="text-3xl md:text-4xl font-black text-steelDark mb-4">Nuestros Servicios</h3>
+                <p class="text-slate-600">Soluciones a medida para los sectores industrial, comercial y de infraestructura.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <span class="w-14 h-14 rounded-xl bg-industrialBlue/10 text-industrialBlue flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-building-user"></i>
+                    </span>
+                    <h4 class="text-xl font-bold text-steelDark mb-3">Estructuras Metálicas</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Diseño, fabricación y armado de galpones, mezaninas, naves industriales y vigas de gran tonelaje.
+                    </p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <span class="w-14 h-14 rounded-xl bg-industrialBlue/10 text-industrialBlue flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-industry"></i>
+                    </span>
+                    <h4 class="text-xl font-bold text-steelDark mb-3">Mecanizado & Piezas</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Torneado, fresado y torno de precisión para la confección y reconstrucción de partes industriales.
+                    </p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <span class="w-14 h-14 rounded-xl bg-industrialBlue/10 text-industrialBlue flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </span>
+                    <h4 class="text-xl font-bold text-steelDark mb-3">Proyectos de Ingeniería</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Desarrollo de planos técnicos, consultoría metalmecánica, cómputos métricos y asesoría de campo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Proyectos (Fotos 3 a 6) -->
+    <section id="proyectos" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-industrialBlue font-bold uppercase tracking-wider text-xs block mb-2">Muestra de Trabajos</span>
+            <h3 class="text-3xl md:text-4xl font-black text-steelDark mb-4">Galería de Proyectos</h3>
+            <p class="text-slate-600">Imágenes reales de ejecuciones metalmecánicas desarrolladas por MASTERTECH.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- FOTO 3 -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow border border-slate-200">
+                <div class="aspect-square relative overflow-hidden bg-slate-200">
+                    <img src="foto3.jpg" alt="Fabricación Estructural MASTERTECH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-steelDark text-sm">Fabricación Estructural</h4>
+                    <p class="text-xs text-slate-500">Estructuras pesadas para galpones</p>
+                </div>
+            </div>
+
+            <!-- FOTO 4 -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow border border-slate-200">
+                <div class="aspect-square relative overflow-hidden bg-slate-200">
+                    <img src="foto4.jpg" alt="Mecanizado de Precisión MASTERTECH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-steelDark text-sm">Mecanizado de Alta Precisión</h4>
+                    <p class="text-xs text-slate-500">Piezas e insumos industriales</p>
+                </div>
+            </div>
+
+            <!-- FOTO 5 -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow border border-slate-200">
+                <div class="aspect-square relative overflow-hidden bg-slate-200">
+                    <img src="foto5.jpg" alt="Montaje Industrial MASTERTECH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-steelDark text-sm">Montaje e Instalaciones</h4>
+                    <p class="text-xs text-slate-500">Trabajos de campo y soldadura</p>
+                </div>
+            </div>
+
+            <!-- FOTO 6 -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow border border-slate-200">
+                <div class="aspect-square relative overflow-hidden bg-slate-200">
+                    <img src="foto6.jpg" alt="Mantenimiento Metalmecánico MASTERTECH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-steelDark text-sm">Mantenimiento Industrial</h4>
+                    <p class="text-xs text-slate-500">Reparación y adecuaciones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto / Cotización -->
+    <section id="contacto" class="py-24 bg-steelDark text-white px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <div class="lg:col-span-5">
+                <span class="text-industrialAccent font-bold uppercase tracking-wider text-xs block mb-2">Atención Inmediata</span>
+                <h3 class="text-3xl md:text-4xl font-black mb-6">Inicia tu proyecto con MASTERTECH</h3>
+                <p class="text-slate-300 leading-relaxed mb-8">
+                    Déjanos tus datos o los requerimientos de tu empresa para ponernos en contacto a la brevedad con una propuesta técnica y económica.
+                </p>
+
+                <div class="space-y-6 text-sm">
+                    <div class="flex items-center gap-4">
+                        <span class="w-10 h-10 rounded-lg bg-slate-800 text-industrialBlue flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <div>
+                            <span class="block text-slate-400 text-xs">Teléfono / WhatsApp</span>
+                            <span class="font-semibold text-white">+58 (412) 000-0000</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <span class="w-10 h-10 rounded-lg bg-slate-800 text-industrialBlue flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <div>
+                            <span class="block text-slate-400 text-xs">Correo Electrónico</span>
+                            <span class="font-semibold text-white">contacto@mastertech.com</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <span class="w-10 h-10 rounded-lg bg-slate-800 text-industrialBlue flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <div>
+                            <span class="block text-slate-400 text-xs">Ubicación</span>
+                            <span class="font-semibold text-white">Zona Industrial, Venezuela</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario -->
+            <div class="lg:col-span-7 bg-slate-800/50 p-8 rounded-3xl border border-slate-700">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Nombre o Empresa</label>
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialBlue">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Teléfono de Contacto</label>
+                            <input type="tel" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialBlue">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Correo Electrónico</label>
+                        <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialBlue">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Detalles del Proyecto / Requerimiento</label>
+                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-industrialBlue" placeholder="Describe brevemente el trabajo metalmecánico requerida..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-industrialAccent hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition-all">
+                        Enviar Solicitud
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-8 px-6 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p><strong>MASTERTECH</strong> &copy; 2026. Todos los derechos reservados.</p>
+            <p>Ingeniería & Soluciones Metalmecánicas Integrales.</p>
+        </div>
+    </footer>
+
+    <!-- Script Menu Móvil -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.className = mobileMenu.classList.contains('hidden') ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
+        });
+    </script>
+</body>
+</html>
